@@ -5,7 +5,7 @@ const button=document.querySelector('button');
 const startBody=document.querySelector('.start');
 const bigscore=document.querySelector('.bigscore');
 var audio = new Audio('laser.mp3');
-var audio1 = new Audio('rail.wav');
+var audio1 = new Audio('rail.mp3');
 
 
 
