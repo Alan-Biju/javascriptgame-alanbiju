@@ -4,7 +4,7 @@ const scoreEl=document.querySelector('#score');
 const button=document.querySelector('button');
 const startBody=document.querySelector('.start');
 const bigscore=document.querySelector('.bigscore');
-console.log(bigscore);
+var audio = new Audio('laser.mp3');
 
 
 canvas.width=innerWidth;
@@ -246,6 +246,7 @@ window.addEventListener('click',(e)=>{
     projectiles.push(
         new Projectile(canvas.width/2,canvas.height/2,5,'white',velocity )
     )
+    audio.play();
     
  
 });
