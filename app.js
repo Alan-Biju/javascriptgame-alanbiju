@@ -5,6 +5,8 @@ const button=document.querySelector('button');
 const startBody=document.querySelector('.start');
 const bigscore=document.querySelector('.bigscore');
 var audio = new Audio('laser.mp3');
+var audio1 = new Audio('rail.wav');
+
 
 
 canvas.width=innerWidth;
@@ -152,6 +154,7 @@ function enemy(){
 let animationId
 
 function animate(){
+    audio1.play();
     animationId=  requestAnimationFrame(animate);
 ctx.fillStyle='rgba(0,0,0,0.1)';
     ctx.fillRect(0,0,canvas.width,canvas.height);
