@@ -246,8 +246,11 @@ window.addEventListener('click',(e)=>{
     projectiles.push(
         new Projectile(canvas.width/2,canvas.height/2,5,'white',velocity )
     )
-    audio.play();
-    
+     setTimeout(()=>{
+        audio.play();
+        audio.currentTime=0;
+        
+    },0);
  
 });
 button.addEventListener('click',()=>{
